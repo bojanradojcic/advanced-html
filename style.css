@@ -1,0 +1,120 @@
+body {
+	width: 1024px;
+	margin: auto;
+	background-color: #EEE;
+	font-family: Helvetica;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, p {
+	margin: 0;
+}
+
+h1 {
+	font-size: 48px;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	background-color: #B452CD
+}
+
+header {
+	margin: 24px 0;
+	overflow: hidden;
+}
+
+.col-1 {
+	width: 364px;
+	margin-right: 32px;
+	display: inline-block;
+	float: left;
+}
+
+.col-2 {
+	width: 628px;
+	display: inline-block;
+	float: left;
+}
+
+.logo {
+	float: left;
+	margin-right: 10px;
+	font-weight: bold;
+}
+
+nav a {
+	display: block;
+	float: left;
+	margin-right: 10px;
+	font-size: 16px;
+	line-height: 21px;
+	color: #B452CD;
+}
+
+nav a:before {
+	content:"/ ";
+	color: #000;
+}
+
+nav a:hover {
+	color: #000;
+}
+
+
+section {
+	margin-bottom: 96px;
+	overflow: auto;
+}
+
+
+p.body {
+	font-family: Georgia;
+	font-size: 	 18px;
+	line-height: 24px;
+	color: #333;
+	margin: 5px 0;
+}
+
+.section-header {
+	background-color: #E1E1E1;
+	padding: 5px 10px;
+}
+
+.thumbnail {
+	width: 232px;
+	height: 232px;
+	float: left;
+	margin: 16px 32px 0 0;
+	position: relative;
+}
+
+.thumbnail:last-child {
+	margin-right: 0;
+}
+
+
+.thumbnail > h4 {
+	font-weight: normal;
+	position: absolute;
+	top: 0;
+	padding: 10px
+	
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	padding: 16px 0;
+	font-size: 12px;
+	font-weight: bold;
+}

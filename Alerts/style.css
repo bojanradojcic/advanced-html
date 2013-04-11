@@ -1,0 +1,38 @@
+body {
+  font-family: Helvetica;
+}
+
+.alert {
+  margin: 10px 0;
+  padding: 0 20px 0 120px;
+  height: 100px;
+  width: 400px;
+  background-image: url('images/alrt-icns.png');
+  background-color: #FFF;
+  background-repeat: no-repeat;
+  border: 8px solid #62B1F6;
+}
+
+.alert h3 {
+  margin-top: 20px;
+}
+
+.alert p {
+  margin-top: 5px;
+  color: #333;
+}
+
+.alert-success {
+  border-color: #83F52C;
+  background-position: 0 -100px;
+}
+
+.alert-warning {
+  border-color: #FC1;
+  background-position: 0 -200px;  
+}
+
+.alert-error {
+  border-color: #F33;
+  background-position: 0 -300px;
+}
