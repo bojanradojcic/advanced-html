@@ -1,6 +1,7 @@
 body {
 	width: 1024px;
 	margin: auto;
+	padding: 0 20px;
 	background-color: #EEE;
 	font-family: Helvetica;
 }
@@ -25,7 +26,7 @@ ul {
 }
 
 img {
-	background-color: #B452CD
+	background-color: #FFF
 }
 
 header {
@@ -33,17 +34,26 @@ header {
 	overflow: hidden;
 }
 
-.col-1 {
+.three-cols {
 	width: 364px;
 	margin-right: 32px;
 	display: inline-block;
 	float: left;
 }
 
-.col-2 {
-	width: 628px;
+.five-cols {
+  width: 628px;
 	display: inline-block;
 	float: left;
+}
+
+.group:before,
+.group:after {
+  content: "";
+  display: block;
+}
+.group:after {
+  clear: both;
 }
 
 .logo {
@@ -73,9 +83,7 @@ nav a:hover {
 
 section {
 	margin-bottom: 96px;
-	overflow: auto;
 }
-
 
 p.body {
 	font-family: Georgia;
@@ -85,36 +93,110 @@ p.body {
 	margin: 5px 0;
 }
 
-.section-header {
-	background-color: #E1E1E1;
-	padding: 5px 10px;
-}
-
 .thumbnail {
-	width: 232px;
-	height: 232px;
-	float: left;
-	margin: 16px 32px 0 0;
+	margin-top: 16px;
+	border: 1px solid #EEE;
 	position: relative;
 }
-
-.thumbnail:last-child {
-	margin-right: 0;
-}
-
 
 .thumbnail > h4 {
 	font-weight: normal;
 	position: absolute;
 	top: 0;
 	padding: 10px
-	
+}
+
+.two-cols {
+	width: 230px;
+	height: 230px;
+	float: left;
+	margin-right: 32px;
+}
+
+.last-col {
+	margin-right: 0;
+}
+
+
+.alert {
+  margin: 10px 0;
+  padding: 0 20px 0 120px;
+  height: 100px;
+  width: 400px;
+  background-image: url('images/alrt-icns.png');
+  background-color: #FFF;
+  background-repeat: no-repeat;
+  border: 8px solid #62B1F6;
+}
+
+.alert h3 {
+  margin-top: 20px;
+}
+
+.alert p {
+  margin-top: 5px;
+  color: #333;
+}
+
+.alert-success {
+  border-color: #83F52C;
+  background-position: 0 -100px;
+}
+
+.alert-warning {
+  border-color: #FC1;
+  background-position: 0 -200px;  
+}
+
+.alert-error {
+  border-color: #F33;
+  background-position: 0 -300px;
+}
+
+.definition  {
+	text-decoration: underline;
+	color: #62B1F6;
+}
+
+.tooltip-trigger {
+	position: relative;
+}
+
+.tooltip {
+	display: none;
+	width: 300px;
+	padding: 10px;
+	font-family: Helvetica;
+	color: #333;
+	font-size: 14px;
+	line-height: 18px;
+	text-decoration: none;
+	background-color: #DDD;
+	position: absolute;
+	bottom: 30px;
+	border-radius: 5px;
+}
+
+.tooltip:after {
+	content: '\25BC';
+	color: #DDD;
+	position: absolute;
+	bottom: -13px;
+	left: 10%;	  
+}
+
+.tooltip-trigger:hover .tooltip {
+	display: block;
 }
 
 footer {
 	position: fixed;
 	bottom: 0;
-	padding: 16px 0;
+	left:0;
+	width: 100%;
+	padding: 16px;
+	background-color: #333;
+	color:#666;
 	font-size: 12px;
 	font-weight: bold;
 }
