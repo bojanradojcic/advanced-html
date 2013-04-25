@@ -1,0 +1,298 @@
+
+/* RESET */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  text-decoration: none;
+}
+
+
+body {
+  max-width: 1000px;
+  margin: auto;
+  background-color: #EEE;
+  font-family: Helvetica;
+  padding: 0px 10px 60px 10px;
+}
+
+header {
+  margin: 20px 2%;
+}
+
+nav a {
+  display: block;
+  float: left;
+  margin-right: 10px;
+  font-size: 16px;
+  line-height: 21px;
+  color: #000;
+}
+
+nav a:after {
+  content:" /";
+  color: #000;
+}
+
+nav a:hover {
+  color: #b0798a;
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  float: none;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+  .left {
+    width: 56.8%;
+    float: left;
+  }
+
+  .right {
+    width: 37.2%;
+    float: right;
+    margin-left: 0;
+  }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left:0;
+  width: 100%;
+  padding: 16px;
+  background-color: #333;
+  color:#666;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.thumbnail {
+  width: 48%;
+  float: left;
+  background-color: #333;
+  margin-bottom: 6%;
+}
+
+.thumbnail:nth-child(2n+2) {
+  float: right;
+}
+
+.thumbnail:hover {
+  background-color: #ff0;
+}
+
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 48px;
+  color: #4c4275;
+}
+
+h4, h5 {
+  margin: 1em 0;
+}
+
+h4 {
+  font-weight: bold;
+}
+
+.deck {
+  font-size: 1.35em;
+  line-height: 1.5em;
+  font-family: Georgia;
+  color: #666;
+}
+
+.body {
+  font-size: 1.15em;
+  line-height: 1.2em;
+  font-family: Georgia;
+  color: #333;
+}
+
+/* JOURNAL */
+
+article {
+  margin: 0 21.6%;
+}
+
+.journal p {
+  text-indent: 55px;
+}
+
+.journal p:first-of-type {
+  text-indent: 0;
+  font-size: 1.35em;
+  line-height: 1.5em;
+  margin-bottom: 1.5em;
+  color: #666;
+  font-style: italic;
+}
+
+.journal p:nth-of-type(2) {
+  text-indent: 0;
+}
+
+a[href^="https"]:after {
+  content: url('http://p.yusukekamiyamane.com/icons/search/fugue/icons/lock.png');
+}
+
+
+/* Experiments */
+
+
+.lesson {
+  margin-bottom: 36px;
+  max-width: 56.8%;
+}
+
+h3 {
+  margin-bottom: 16px;
+  color: #666;
+}
+
+.group:before,
+.group:after {
+  content: "";
+  display: block;
+}
+.group:after {
+  clear: both;
+}
+
+
+
+
+
+/* Alerts */
+
+.alert {
+  margin: 10px 0;
+  padding: 0 20px 0 120px;
+  height: 100px;
+  width: 400px;
+  background-image: url('../images/alrt-icns.png');
+  background-color: #FFF;
+  background-repeat: no-repeat;
+  border: 8px solid #62B1F6;
+}
+
+.alert h3 {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 0;
+}
+
+.alert p {
+  margin-top: 5px;
+  color: #333;
+}
+
+.alert-success {
+  border-color: #83F52C;
+  background-position: 0 -100px;
+}
+
+.alert-warning {
+  border-color: #FC1;
+  background-position: 0 -200px;  
+}
+
+.alert-error {
+  border-color: #F33;
+  background-position: 0 -300px;
+}
+
+
+/* Tooltips */
+
+.definition  {
+  color: #589e5c;
+}
+
+.tooltip-trigger {
+  position: relative;
+}
+
+.tooltip {
+  display: none;
+  width: 300px;
+  padding: 10px;
+  font-family: Georgia;
+  font-style: italic;
+  color: #DDD;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  background-color: #333;
+  position: absolute;
+  bottom: 30px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px #333;
+}
+
+.tooltip:after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  border: 15px solid transparent;
+  border-top: 15px solid #333;
+  color: #fff;
+  position: absolute;
+  bottom: -20px;
+  left: 10%;    
+}
+
+.tooltip-trigger:hover .tooltip {
+  display: block;
+}
+
