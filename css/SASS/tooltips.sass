@@ -1,0 +1,40 @@
+.definition  
+  color: #589e5c
+
+
+.tooltip-trigger 
+  position: relative
+
+
+.tooltip 
+  display: none
+  width: 300px
+  padding: 10px
+  font-family: Georgia
+  font-style: italic
+  color: #DDD
+  font-size: 14px
+  line-height: 18px
+  text-decoration: none
+  background-color: #333
+  position: absolute
+  bottom: 30px
+  border-radius: 5px
+  box-shadow: 3px 3px 10px #333
+  &:after 
+    content: ''
+    display: block
+    height: 0
+    width: 0
+    border: 15px solid transparent
+    border-top: 15px solid #333
+    color: #fff
+    position: absolute
+    bottom: -20px
+    left: 10%    
+
+
+.tooltip-trigger:hover .tooltip 
+  display: block
+
+  

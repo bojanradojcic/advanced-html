@@ -1,0 +1,39 @@
+.alert 
+  margin: 10px 0
+  padding: 0 20px 0 120px
+  height: 100px
+  width: 400px
+  background:
+    image: url('../images/alrt-icns.png')
+    color: #FFF
+    repeat: no-repeat
+  border: 8px solid #62B1F6
+
+.alert-success
+  @extend .alert 
+  border-color: #83F52C
+  background-position: 0 -100px
+
+
+.alert-warning
+  @extend .alert 
+  border-color: #FC1
+  background-position: 0 -200px
+
+
+.alert-error
+  @extend .alert 
+  border-color: #F33
+  background-position: 0 -300px
+
+.alert 
+  h3 
+    margin-top: 20px
+    font-weight: bold
+    color: #000
+    margin-bottom: 0
+  p 
+    margin-top: 5px
+    color: #333
+
+

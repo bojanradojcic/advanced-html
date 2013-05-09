@@ -1,0 +1,23 @@
+article 
+  margin: 0 21.6%
+  @media screen and (max-width: 500px) 
+    margin: 0 2%
+
+.journal 
+  p 
+    text-indent: 55px
+    &:first-of-type 
+      text-indent: 0
+      font-size: 1.35em
+      font-style: italic
+      line-height: 1.5em
+      margin-bottom: 1.5em
+      color: #666
+    &:nth-of-type(2) 
+      text-indent: 0
+
+a[href^="https"]:after 
+  content: url('http://p.yusukekamiyamane.com/icons/search/fugue/icons/lock.png')
+
+a[href*="http"]:after 
+  content: url('http://p.yusukekamiyamane.com/icons/search/fugue/icons/lock.png')
