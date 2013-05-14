@@ -210,10 +210,6 @@ h3 {
   clear: both;
 }
 
-
-
-
-
 /* Alerts */
 
 .alert {
@@ -225,6 +221,17 @@ h3 {
   background-color: #FFF;
   background-repeat: no-repeat;
   border: 8px solid #62B1F6;
+  position: relative;
+}
+
+.alert-close {
+  display: block;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 3px;
 }
 
 .alert h3 {
