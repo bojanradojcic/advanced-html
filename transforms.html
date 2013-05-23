@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Untitled</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="author" href="humans.txt">
+    </head>
+<body>
+  <header>
+    <nav class="group">
+      <a href="index.html">Home</a>
+      <a href="cv.html">About</a>
+      <a href="experiments.html">Experiments</a>
+      <a href="journal.html">Journal</a>      
+    </nav>
+  </header>
+  <section id="table">
+    <h1>Card Flip</h1>
+    <div class="card">
+      <div class="front"></div>
+      <div class="back"></div>
+    </div>
+    <div class="card">
+      <div class="front"></div>
+      <div class="back"></div>
+    </div>
+    <div class="card">
+      <div class="front"></div>
+      <div class="back"></div>
+    </div>
+    <div class="card">
+      <div class="front"></div>
+      <div class="back"></div>
+    </div>
+    <div class="card">
+      <div class="front"></div>
+      <div class="back"></div>
+    </div>
+    <div class="card">
+      <div class="front"></div>
+      <div class="back"></div>
+    </div>
+    <div class="card">
+      <div class="front"></div>
+      <div class="back"></div>
+    </div>
+    <div class="card">
+      <div class="front"></div>
+      <div class="back"></div>
+    </div>
+    <div class="card">
+      <div class="front"></div>
+      <div class="back"></div>
+    </div>
+  </section>  
+  <footer>Copyright MMXXIII</footer>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  <script>
+    $(".card").click(function () {
+     $(this).toggleClass("face-up");
+    });
+  </script>
+</body>
+</html>
