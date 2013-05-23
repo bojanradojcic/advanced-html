@@ -340,6 +340,40 @@ h3 {
   }
 }
 
+#table {
+  width: 600px;
+  margin: 0 2%;
+  overflow: auto; }
+
+.card {
+  float: left;
+  width: 180px;
+  height: 280px;
+  margin: 20px 10px;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 1s ease-in-out; }
+  .card.face-up {
+    -webkit-transform: rotatex(-180deg); }
+  .card .front {
+    width: 180px;
+    height: 280px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: red;
+    -webkit-backface-visibility: hidden; }
+  .card .back {
+    width: 180px;
+    height: 280px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: blue;
+    -webkit-transform: rotatex(180deg);
+    -webkit-backface-visibility: hidden; }
+
+
 @media screen and (max-width: 500px) {
   .thumbnail {
     width: 48%;
