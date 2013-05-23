@@ -115,8 +115,10 @@ footer {
 .thumbnail {
   width: 48%;
   float: left;
-  background-color: #333;
+  background-color: #CCC;
   margin-bottom: 6%;
+  position: relative;
+  height: 150px;
 }
 
 .thumbnail:nth-child(2n+2) {
@@ -124,9 +126,18 @@ footer {
 }
 
 .thumbnail:hover {
-  background-color: #ff0;
+  background-color: #DDD;
 }
 
+.thumbnail  h4 {
+  font-weight: normal;
+  position: absolute;
+  top: 0;
+  padding: 10px;
+  font-size: 1.5em;
+  text-decoration: underline;
+  color: darkcyan;
+}
 
 h1 {
   font-size: 36px;
