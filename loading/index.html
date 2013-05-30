@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Capture Interface</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="jquery-2.0.0.min.js"></script>
+    <script type="text/javascript" src="/js/phone-format.js"></script>
+    <script type="text/javascript" src="/js/fastclick.js"></script>
+    <script type="text/javascript" src="interface.js?<%= Time.now.to_i %>"></script>
+  </head>
+
+  <body>
+    <div class="page" id="page_capture">
+      <section>
+        <h1>Press the button. Look at the mirror.
+        <p>Hold your pose for 5 seconds.</p></h1>
+      </section>
+      <section>
+        <a href="#" id="shutter_button" class="btn">
+          <ul class="shutter">
+            <li><div></div></li>
+            <li><div></div></li>
+            <li><div></div></li>
+            <li><div></div></li>
+            <li><div></div></li>
+            <li><div></div></li>
+            <li><div></div></li>
+            <li><div></div></li>
+          </ul>
+        </a>
+      </section>
+      <audio id="countdown" src="/audio/countdown.m4a" preload="auto"></audio>
+    </div>
+
+    <div class="page" id="page_loading">
+      <section>
+        <a href="#" id="done_loading">Done</a>
+      </section>
+      <section>
+        <ul class="shutter loading">
+          <li><div></div></li>
+          <li><div></div></li>
+          <li><div></div></li>
+          <li><div></div></li>
+          <li><div></div></li>
+          <li><div></div></li>
+          <li><div></div></li>
+          <li><div></div></li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="page" id="page_preview">
+      <section>
+        <img id="preview" width="500" height="500">
+      </section>
+      <div id="preview_buttons">
+        <a id="accept_photo" class="confirm" href="#"><h2>I love it.</h2><p>Add it to the gallery.</p></a>
+        <a id="decline_photo" class="decline" href="#"><h2>Cancel</h2></a>
+      </div>
+    </div>
+
+    <div class="page" id="page_deliver">
+      <section class="num-pad">
+        <div class="num-display">
+          <div id="number"></div>
+          <div class="clear_button"></div>
+        </div>
+        <ul class="num-input" id="keypad">
+          <li class="number_button" data-key="1"><p>1</p></li>
+          <li class="number_button" data-key="2"><p>2</p></li>
+          <li class="number_button" data-key="3"><p>3</p></li>
+          <li class="number_button" data-key="4"><p>4</p></li>
+          <li class="number_button" data-key="5"><p>5</p></li>
+          <li class="number_button" data-key="6"><p>6</p></li>
+          <li class="number_button" data-key="7"><p>7</p></li>
+          <li class="number_button" data-key="8"><p>8</p></li>
+          <li class="number_button" data-key="9"><p>9</p></li>
+          <li class="number_button backspace" data-key="backspace"></li>
+          <li class="number_button" data-key="0"><p>0</p></li>
+        </ul>
+      </section>
+      <div id="preview_buttons">
+        <a id="accept_phone" class="confirm" href="#"><h2>Send the photo to my phone.</h2></a>
+        <a id="skip_phone" class="decline" href="#"><h2>Skip</h2></a>
+      </div>
+    </div>
+
+    <div class="page" id="page_finish">
+      <h1>That's it. <p>You should receieve a message with a link to your photo any minute.<p></h1>
+      <section>
+        <img id="preview" width="500" height="500" src="http://www.placehold.it/500x500">
+      </section>
+      <div id="preview_buttons">
+        <a id="return_to_capture" class="confirm" href="#"><h2>Okay</h2></a>
+      </div>          
+    </div>
+    <div class="page" id="page_finish_no_cell">
+      <h1>That's it. <p>See yours and other photos at www.stereogif.me<p></h1>
+      <section>
+        <img id="preview" width="500" height="500" src="http://www.placehold.it/500x500">
+      </section>
+      <div id="preview_buttons">
+        <a id="return_to_capture" class="confirm" href="#"><h2>Okay</h2></a>
+      </div>   
+    </div>
+    <div class="page" id="page_error">
+      <h1>Something went wrong.</h1>
+      <section>
+        <img id="preview" width="500" height="500" src="http://www.placehold.it/500x500">
+      </section>
+      <div id="preview_buttons">
+        <a id="return_to_capture" class="confirm" href="#"><h2>Okay</h2></a>
+      </div>              </div>
+  </body>
+</html>
